@@ -9,7 +9,7 @@ function openTrade(bool _open) external multiSignReq {
 }  
 
 ## How it works:
-multiSignReq modifier checks at the start if you are owner and at the end checks if multiSign was executed  
-multiSign() stores the transaction if not previously stored and adds the owner sign  
+<b>multiSignReq</b> modifier that ensures that you are an owner and multiSign() was executed  
+<b>multiSign()</b> stores the transaction if not previously stored and adds the owner sign  
 
 Once the required number of owners confirm the transaction multSign returns true
