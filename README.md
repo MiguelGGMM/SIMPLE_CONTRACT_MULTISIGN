@@ -4,8 +4,9 @@
 ## Usage example:
 
 function openTrade(bool _open) external multiSignReq {   
-&emsp;&emsp;if(!multiSign()) return;  
-&emsp;&emsp;isTradeOpened = _open;  
+&emsp;&emsp;if(multiSign()){  
+&emsp;&emsp;&emsp;&emsp;isTradeOpened = _open;  
+&emsp;&emsp;}  
 }  
 
 ## How it works:
