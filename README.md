@@ -5,7 +5,7 @@
 
 ```solidity
 function openTrade(bool _open) external multiSignReq {   
-  if(multiSign()){  
+  if(multiSign()) {  
       isTradeOpened = _open;  
   }  
 }  
