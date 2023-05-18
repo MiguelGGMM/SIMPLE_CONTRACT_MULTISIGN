@@ -3,11 +3,13 @@
 
 ## Usage example:
 
+```solidity
 function openTrade(bool _open) external multiSignReq {   
-&emsp;&emsp;if(multiSign()){  
-&emsp;&emsp;&emsp;&emsp;isTradeOpened = _open;  
-&emsp;&emsp;}  
+  if(multiSign()){  
+      isTradeOpened = _open;  
+  }  
 }  
+```
 
 ## How it works:
 <b>multiSignReq</b> modifier that ensures that you are an owner and multiSign() was executed  
